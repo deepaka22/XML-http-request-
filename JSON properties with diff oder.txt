@@ -1,0 +1,20 @@
+Question :
+
+compare two JSON have the same properties witout oder ?
+
+var obj1 = {'name':'person1', 'age':'35'};
+var obj2 = {'age':'54', 'name': 'Person2'};
+
+Ans: 
+- obj 1 has name in 0 index and age in 1 index of array, when its labeled in an object
+- obj 1 has age in 0 index and name in 1 index of array, when its labeled in an object
+- however we can call them them using their positions in the array or by the key name assigned, eg : name can be called in the first obj by, 
+console.log(obj1.name) or console.log(obj1[0]).
+- same for obj2, however though for short block of codes, humans can identify and call them accordingly. 
+- for larger projects, we can assign both the oobjects in a single array.
+eg : var obj = [{'name':'person1', 'age':'35'},
+		{'age':'54', 'name': 'Person2'}];
+- now we can call them just by theier key names, and we can get the all the names in the object. 
+
+- when the properties are writted in oder, it can be called and used by constructing an array and by thier indexes. 
+- properties are writted in oder, its quite uncomfartble in oder to get or cal the value, and probability of errors are high. 
